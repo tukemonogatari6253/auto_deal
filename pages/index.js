@@ -13,6 +13,7 @@ export default function Home() {
       <Head>
         <title>ホーム - こんにちは。</title>
         <meta name="description" content="Auth0認証を使ったNext.jsアプリ" />
+    <meta name=”robots” content=”noindex , nofollow” />
       </Head>
       {!user ? (
         <>
