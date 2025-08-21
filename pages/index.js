@@ -35,7 +35,7 @@ export default function Home() {
 		<div>ロゴmann</div>
 		<div>
 			<ul>
-				<li><Link>サービスとは</Link></li>
+				<li><Link href="/api/auth/login">サービスとは</Link></li>
 				<li><Link href="/api/auth/login">保険カテゴリ</Link></li>
 				<li><Link href="/api/auth/login">保険会社一覧</Link></li>
 			</ul>
