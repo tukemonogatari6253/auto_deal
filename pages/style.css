@@ -125,3 +125,26 @@ section .service .service-item .service-item-img{
 section .service .service-item .service-item-text{
 	text-align:center;
 }
+section .product{
+	display:flex;
+	gap:10px;
+}
+section .product .product-item{
+	width: 30%;
+	display:flex;
+	gap:10px;
+	padding:1em;
+	background: #FFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+} 
+section .product .product-item .product-item-img{
+	width:30%;
+}
+section .product .product-item .product-item-text{
+	width:60%;
+}
+section .product .product-item .product-item-review{
+	display:flex;
+	gap:10px;
+	
+}
