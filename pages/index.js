@@ -17,6 +17,18 @@ export default function Home() {
       </Head>
       {!user ? (
         <>
+        		<div>ロゴ</div>
+		<div>
+			<ul>
+				<li><Link>サービスとは</Link></li>
+				<li><Link>保険カテゴリ</Link></li>
+				<li><Link>保険会社一覧</Link></li>
+			</ul>
+			<div>
+				<div><Link>新規会員登録</Link></div>
+				<div><Link>ログイン</Link></div>
+			</div>
+		</div>
           <h1>こんにちは。autodealです。まずはログインしよう</h1>
           <Link href="/api/auth/login">ログイン</Link>
         </>
