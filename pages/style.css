@@ -3,15 +3,17 @@ body {
 	font-size: 14px;
 }
 body a {
-	text-decolatation:none;
+	text-decoration: none;
+	color:#000;
 }
 body ul li {
-	text-decolatation:none;
+	list-style:none;
 }
 header {
 	width:100%;
 	display:flex;
 	justify-content: space-between;
+	background: #fff;
 }
 header .rogo{
 	width:20%;
@@ -26,9 +28,15 @@ header .header-contents ul{
 	display:flex;
 	gap:10px;
 }
-header .header-contents .register,header .contents .login{
+header .header-contents div{
+	display:flex;
+	gap:10px;
+}
+header .header-contents .register,header .header-contents .login{
 	padding:10px 20px;
 	border-radius:10px;
+}
+header .header-contents .register a,header .header-contents .login a{
 	color:#fff;
 }
 header .header-contents .register{
