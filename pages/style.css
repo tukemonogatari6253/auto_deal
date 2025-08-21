@@ -83,10 +83,11 @@ section .insurance{
 	gap:10px;
 }
 section .insurance .insurance-item{
-	width: 40%;
+	width: 50%;
 	display:flex;
 	gap:10px;
-	padding:1em;
+	padding: 2em;
+    border-radius: 14px;
 	background: #FFF;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 } 
