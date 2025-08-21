@@ -66,11 +66,11 @@ export default function Home() {
 	<section>
 		<h3>目的の保険をさがす</h3>
 		<div class="insurance">
-			<div>
-				<div>img</div>
-				<div>
-					<div>自動車・バイクの保険</div>
-					<div>自動車の保険自動車の保険自動車の保険自動車の保険
+			<div class="insurance-item">
+				<div class="insurance-item-img">img</div>
+				<div class="insurance-item-text">
+					<div class="insurance-item-title">自動車・バイクの保険</div>
+					<div class="insurance-item-subtitle">自動車の保険自動車の保険自動車の保険自動車の保険
 					自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険</div>
 				</div>
 			</div>
