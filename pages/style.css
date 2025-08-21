@@ -1,28 +1,39 @@
 body {
-  background-color:#bbb;
-  font-size: 14px;
+	background-color:#bbb;
+	font-size: 14px;
+}
+body a {
+	text-decolatation:none;
+}
+body ul li {
+	text-decolatation:none;
 }
 header {
-width:100%;
-display:flex;
- justyify-content:space-between;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
 }
 header .rogo{
-width:20%;
+	width:20%;
 }
 header .header-contents{
-width:70%;
-display:flex;
-justyify-content:flex-start;
-gap:10px;
+	width:70%;
+	display:flex;
+	justify-content:flex-start;
+	gap:10px;
+}
+header .header-contents ul{
+	display:flex;
+	gap:10px;
 }
 header .header-contents .register,header .contents .login{
-padding:10px 20px;
-border-radius:10px;
+	padding:10px 20px;
+	border-radius:10px;
+	color:#fff;
 }
 header .header-contents .register{
-back-groung:#332299;
+	background: #4BCCBE;
 }
 header .header-contents .login{
-back-groung:#993322;
+	background: #FF8C3F;
 }
