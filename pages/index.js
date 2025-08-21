@@ -18,7 +18,7 @@ export default function Home() {
       {!user ? (
         <>
 
-          <h1 style="color: red;">こんにちは。autodealです。まずはログインしよう</h1>
+          <h1>こんにちは。autodealです。まずはログインしよう</h1>
           <Link href="/api/auth/login">ログイン</Link>
         </>
       ) : (
