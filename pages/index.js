@@ -15,12 +15,8 @@ export default function Home() {
         <meta name="description" content="Auth0認証を使ったNext.jsアプリ" />
     <meta name="robots" content="noindex , nofollow" />
 	  <style>
-        h1 {
-            color: red;
-            }
-        p{
-            background-color: yellow;
-        }
+        h1 {color: red;}
+        p{background-color: yellow;}
     </style>
       </Head>
       {!user ? (
