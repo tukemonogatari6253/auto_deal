@@ -31,8 +31,8 @@ export default function Home() {
         </>
       )}
     </div>
-	        	<header>
-		<div>ロゴ</div>
+	   <header>
+		<div>ロゴmann</div>
 		<div>
 			<ul>
 				<li><Link>サービスとは</Link></li>
