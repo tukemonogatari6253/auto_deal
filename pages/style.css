@@ -109,7 +109,7 @@ section .aservice{
 	gap:10px;
 }
 section .service .service-item{
-	width: 30%;
+	width: 15%;
 	padding: 2em;
 	background: #FFF;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
