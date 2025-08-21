@@ -1,6 +1,7 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from 'next/link';
 import Head from 'next/head';
+import styles from 'style.css';
 
 export default function Home() {
   const { user, error, isLoading } = useUser();
