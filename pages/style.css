@@ -10,19 +10,19 @@ display:flex;
 header .rogo{
 width:20%;
 }
-header .contents{
+header .header-contents{
 width:70%;
 display:flex;
 justyify-content:flex-start;
 gap:10px;
 }
-header .contents .register,header .contents .login{
+header .header-contents .register,header .contents .login{
 padding:10px 20px;
 border-radius:10px;
 }
-header .contents .register{
+header .header-contents .register{
 back-groung:#332299;
 }
-header .contents .login{
+header .header-contents .login{
 back-groung:#993322;
 }
