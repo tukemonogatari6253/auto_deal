@@ -50,13 +50,13 @@ export default function Home() {
 	<main>
 	<section>
 		<h3>サービスの魅力</h3>
-		<div style="appeal">
+		<div class="appeal">
 			<div>魅力１</div>
 		</div>
 	</section>
 	<section>
 		<h3>保険サービス</h3>
-		<div style="service">
+		<div class="service">
 			<div>
 				<div>img</div>
 				<div>証券サービス</div>
@@ -65,7 +65,7 @@ export default function Home() {
 	</section>
 	<section>
 		<h3>目的の保険をさがす</h3>
-		<div style="insurance">
+		<div class="insurance">
 			<div>
 				<div>img</div>
 				<div>
@@ -78,7 +78,7 @@ export default function Home() {
 	</section>
 	<section>
 		<h3>おすすめのエージェント</h3>
-		<div style="agent">
+		<div class="agent">
 			<div class="agent-item">
 				<div class="agent-item-img">img</div>
 				<div class="agent-item-text">
