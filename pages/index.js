@@ -17,7 +17,21 @@ export default function Home() {
       </Head>
       {!user ? (
         <>
-		 	   <header>
+
+          <h1>こんにちは。autodealです。まずはログインしよう</h1>
+          <Link href="/api/auth/login">ログイン</Link>
+        </>
+      ) : (
+        <>
+          <h1>ログインできました。こんにちは, {user.name}</h1>
+          <Link href="/api/auth/logout">ログアウト</Link>
+          <br />
+          <Link href="/protected">会員ページにいく</Link>
+          <br />
+          <Link href="/reviews">口コミページへ</Link>
+        </>
+      )}
+			 	   <header>
 		<div>ロゴmann</div>
 		<div>
 			<ul>
@@ -78,20 +92,6 @@ export default function Home() {
 		</div>
 	</section>
 	</main>
-          <h1>こんにちは。autodealです。まずはログインしよう</h1>
-          <Link href="/api/auth/login">ログイン</Link>
-        </>
-      ) : (
-        <>
-          <h1>ログインできました。こんにちは, {user.name}</h1>
-          <Link href="/api/auth/logout">ログアウト</Link>
-          <br />
-          <Link href="/protected">会員ページにいく</Link>
-          <br />
-          <Link href="/reviews">口コミページへ</Link>
-        </>
-      )}
-	
     </div>
 
   );
