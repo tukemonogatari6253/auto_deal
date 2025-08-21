@@ -79,17 +79,22 @@ section .agent .agent-item .agent-item-review{
 	
 }
 section .insurance{
-	display:flex;
-	gap:10px;
+	display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 2%;
+    justify-content: start;
 }
 section .insurance .insurance-item{
-	width: 50%;
-	display:flex;
-	gap:10px;
-	padding: 2em;
-	border-radius: 14px;
-	background: #FFF;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+	width: 48%;
+    display: flex;
+    gap: 10px;
+    padding: 2em;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
 } 
 section .insurance .insurance-item .insurance-item-img{
 	width:30%;
@@ -104,7 +109,7 @@ section .insurance .insurance-item .insurance-item-text .insurance-item-title{
 section .insurance .insurance-item .insurance-item-text .insurance-item-subtitle{
 	font-size:0.8em;
 }
-section .aservice{
+section .service{
 	display:flex;
 	gap:10px;
 }
