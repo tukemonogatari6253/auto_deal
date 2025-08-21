@@ -17,6 +17,7 @@ header {
 	display:flex;
 	justify-content: space-between;
 	background: #fff;
+	padding:0.5em;
 }
 header .rogo{
 	width:20%;
@@ -26,18 +27,22 @@ header .header-contents{
 	display:flex;
 	justify-content:flex-start;
 	gap:10px;
+	padding:1em;
 }
 header .header-contents ul{
 	display:flex;
 	gap:10px;
+}
+header .header-contents ul li{
+	margin:0.5em;
 }
 header .header-contents .login-menu{
 	display:flex;
 	gap:10px;
 }
 header .header-contents .register,header .header-contents .login{
-	padding:10px 20px;
-	border-radius:10px;
+	padding:0.5em 1em;
+	border-radius:0.5em;
 }
 header .header-contents .register a,header .header-contents .login a{
 	color:#fff;
