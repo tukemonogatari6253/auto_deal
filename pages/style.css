@@ -68,3 +68,8 @@ section .agent .agent-item .agent-item-img{
 section .agent .agent-item .agent-item-text{
 	width:60%;
 }
+section .agent .agent-item .agent-item-review{
+	display:flex;
+	gap:10px;
+	
+}
