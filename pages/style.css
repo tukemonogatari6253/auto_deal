@@ -18,6 +18,7 @@ header {
 	justify-content: space-between;
 	background: #fff;
 	padding:0.5em;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 header .rogo{
 	width:20%;
@@ -52,4 +53,17 @@ header .header-contents .register{
 }
 header .header-contents .login{
 	background: #FF8C3F;
+}
+section .agent .agent-item{
+	display:flex;
+	gap:10px;
+	padding:1em;
+	background: #FFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+} 
+section .agent .agent-item .agent-item-img{
+	width:30%;
+}
+section .agent .agent-item .agent-item-text{
+	width:60%;
 }
