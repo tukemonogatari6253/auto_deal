@@ -1,0 +1,100 @@
+import { useUser } from '@auth0/nextjs-auth0/client';
+import Link from 'next/link';
+import Head from 'next/head';
+
+
+export default function Home() {
+  const { user, error, isLoading } = useUser();
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
+
+  return (
+    <div>
+      <Head>
+        <title>保険ページ - こんにちは。</title>
+        <meta name="description" content="Auth0認証を使ったNext.jsアプリ" />
+    <meta name="robots" content="noindex , nofollow" />
+      </Head>
+      {!user ? (
+        <>
+
+          <h1>こんにちは。autodealです。まずはログインしよう</h1>
+          <Link href="/api/auth/login">ログイン</Link>
+        </>
+      ) : (
+        <>
+          <h1>ログインできました。こんにちは, {user.name}</h1>
+          <Link href="/api/auth/logout">ログアウト</Link>
+          <br />
+          <Link href="/protected">会員ページにいく</Link>
+          <br />
+          <Link href="/reviews">口コミページへ</Link>
+        </>
+      )}
+			 	   <header>
+		<div class="rogo">ロゴmann</div>
+		<div class="header-contents">
+			<ul>
+				<li><Link href="/api/auth/login">サービスとは</Link></li>
+				<li><Link href="/api/auth/login">保険カテゴリ</Link></li>
+				<li><Link href="/api/auth/login">保険会社一覧</Link></li>
+			</ul>
+			<div class="login-menu">
+				<div class="register"><Link href="/api/auth/login">新規会員登録</Link></div>
+				<div class="login"><Link href="/api/auth/login">ログイン</Link></div>
+			</div>
+		</div>
+		
+	</header>
+	<main>
+  <section>
+		<h3>自動車の保険商品</h3>
+  </section>
+	<section>
+		<h3>おすすめのエージェント</h3>
+		<div class="agent">
+			<div class="agent-item">
+				<div class="agent-item-img">img</div>
+				<div class="agent-item-text">
+					<div>エージェント名</div>
+					<div>東京</div>
+					<div class="agent-item-review">
+						<div>星</div>
+						<div>人数</div>
+					</div>
+				</div>
+			</div>
+			<div class="agent-item">
+				<div class="agent-item-img">img</div>
+				<div class="agent-item-text">
+					<div>エージェント名</div>
+					<div>東京</div>
+					<div class="agent-item-review">
+						<div>星</div>
+						<div>人数</div>
+					</div>
+				</div>
+			</div>
+			<div class="agent-item">
+				<div class="agent-item-img">img</div>
+				<div class="agent-item-text">
+					<div>エージェント名</div>
+					<div>東京</div>
+					<div class="agent-item-review">
+						<div>星</div>
+						<div>人数</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</main>
+    </div>
+
+  );
+}
+
+export const getServerSideProps = async () => {
+  return { props: {} };
+};
