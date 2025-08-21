@@ -48,9 +48,44 @@ export default function Home() {
 		
 	</header>
 	<main>
-  <section>
+	<section>
 		<h3>自動車の保険商品</h3>
-  </section>
+		<div class="product">
+			<div class="agent-item">
+				<div class="agent-item-img">img</div>
+				<div class="agent-item-text">
+					<div>エージェント名</div>
+					<div>東京</div>
+					<div class="agent-item-review">
+						<div>星</div>
+						<div>人数</div>
+					</div>
+				</div>
+			</div>
+			<div class="agent-item">
+				<div class="agent-item-img">img</div>
+				<div class="agent-item-text">
+					<div>エージェント名</div>
+					<div>東京</div>
+					<div class="agent-item-review">
+						<div>星</div>
+						<div>人数</div>
+					</div>
+				</div>
+			</div>
+			<div class="agent-item">
+				<div class="agent-item-img">img</div>
+				<div class="agent-item-text">
+					<div>エージェント名</div>
+					<div>東京</div>
+					<div class="agent-item-review">
+						<div>星</div>
+						<div>人数</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section>
 		<h3>おすすめのエージェント</h3>
 		<div class="agent">
