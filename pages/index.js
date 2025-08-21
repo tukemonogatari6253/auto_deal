@@ -17,6 +17,67 @@ export default function Home() {
       </Head>
       {!user ? (
         <>
+        <header>
+	<div>ロゴ</div>
+	<div>
+		<ul>
+			<li><Link>サービスとは</Link></li>
+			<li><Link>保険カテゴリ</Link></li>
+			<li><Link>保険会社一覧</Link></li>
+		</ul>
+		<div>
+			<div><Link>新規会員登録</Link></div>
+			<div><Link>ログイン</Link></div>
+		</div>
+	</div>
+	
+</header>
+<main>
+<section>
+	<h3>サービスの魅力</h3>
+	<div>
+		<div>魅力１</div>
+	</div>
+</section>
+<section>
+	<h3>保険サービス</h3>
+	<div>
+		<div>
+			<div>img</div>
+			<div>証券サービス</div>
+		</div>
+	</div>
+</section>
+<section>
+	<h3>目的の保険をさがす</h3>
+	<div>
+		<div>
+			<div>img</div>
+			<div>
+				<div>自動車・バイクの保険</div>
+				<div>自動車の保険自動車の保険自動車の保険自動車の保険
+				自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<h3>おすすめのエージェント</h3>
+	<div>
+		<div>
+			<div>img</div>
+			<div>
+				<div>エージェント名</div>
+				<div>東京</div>
+				<div>
+					<div>星</div>
+					<div>人数</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
           <h1>こんにちは。autodealです。まずはログインしよう</h1>
           <Link href="/api/auth/login">ログイン</Link>
         </>
