@@ -57,9 +57,9 @@ export default function Home() {
 	<section>
 		<h3>保険サービス</h3>
 		<div class="service">
-			<div>
-				<div>img</div>
-				<div>証券サービス</div>
+			<div class="service-item">
+				<div class="service-item-img">img</div>
+				<div class="service-item-text">証券サービス</div>
 			</div>
 		</div>
 	</section>
