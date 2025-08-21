@@ -84,7 +84,7 @@ export default function Home() {
 				<div class="agent-item-text">
 					<div>エージェント名</div>
 					<div>東京</div>
-					<div>
+					<div class="agent-item-review">
 						<div>星</div>
 						<div>人数</div>
 					</div>
@@ -95,7 +95,7 @@ export default function Home() {
 				<div class="agent-item-text">
 					<div>エージェント名</div>
 					<div>東京</div>
-					<div>
+					<div class="agent-item-review">
 						<div>星</div>
 						<div>人数</div>
 					</div>
@@ -106,7 +106,7 @@ export default function Home() {
 				<div class="agent-item-text">
 					<div>エージェント名</div>
 					<div>東京</div>
-					<div>
+					<div class="agent-item-review">
 						<div>星</div>
 						<div>人数</div>
 					</div>
