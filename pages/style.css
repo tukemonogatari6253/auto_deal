@@ -1,5 +1,5 @@
 body {
-	background-color:#bbb;
+	background-color:#F8F8F8;
 	font-size: 14px;
 	margin: 0;
 }
@@ -97,8 +97,9 @@ section .insurance .insurance-item .insurance-item-text{
 	width:60%;
 }
 section .insurance .insurance-item .insurance-item-text .insurance-item-title{
-	font-size:2em;
+	font-size:1.4em;
+	margin-bottom: 0.5em;
 }
 section .insurance .insurance-item .insurance-item-text .insurance-item-subtitle{
-	font-size:1em;
+	font-size:0.8em;
 }
