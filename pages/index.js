@@ -57,9 +57,9 @@ export default function Home() {
 	<section>
 		<h3>保険サービス</h3>
 		<div class="service">
-			<div class="service-item"><Link href="/insurance">
+			<div class="service-item">
 				<div class="service-item-img">img</div>
-				<div class="service-item-text">証券サービス</div></Link>
+				<div class="service-item-text">証券サービス</div>
 			</div>
 			<div class="service-item">
 				<div class="service-item-img">img</div>
@@ -74,14 +74,14 @@ export default function Home() {
 	<section>
 		<h3>目的の保険をさがす</h3>
 		<div class="insurance">
-			<div class="insurance-item">
+			<Link href="/insurance" class="insurance-item">
 				<div class="insurance-item-img">img</div>
 				<div class="insurance-item-text">
 					<div class="insurance-item-title">自動車・バイクの保険</div>
 					<div class="insurance-item-subtitle">自動車の保険自動車の保険自動車の保険自動車の保険
 					自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険</div>
 				</div>
-			</div>
+			</Link>
 			<div class="insurance-item">
 				<div class="insurance-item-img">img</div>
 				<div class="insurance-item-text">
