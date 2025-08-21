@@ -28,7 +28,7 @@ header .header-contents ul{
 	display:flex;
 	gap:10px;
 }
-header .header-contents div{
+header .header-contents .login-menu{
 	display:flex;
 	gap:10px;
 }
