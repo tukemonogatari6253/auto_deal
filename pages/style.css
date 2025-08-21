@@ -1,6 +1,7 @@
 body {
 	background-color:#bbb;
 	font-size: 14px;
+	margin: 0;
 }
 body a {
 	text-decoration: none;
@@ -76,4 +77,28 @@ section .agent .agent-item .agent-item-review{
 	display:flex;
 	gap:10px;
 	
+}
+section .insurance{
+	display:flex;
+	gap:10px;
+}
+section .insurance .insurance-item{
+	width: 40%;
+	display:flex;
+	gap:10px;
+	padding:1em;
+	background: #FFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+} 
+section .insurance .insurance-item .insurance-item-img{
+	width:30%;
+}
+section .insurance .insurance-item .insurance-item-text{
+	width:60%;
+}
+section .insurance .insurance-item .insurance-item-text .insurance-item-title{
+	font-size:2em;
+}
+section .insurance .insurance-item .insurance-item-text .insurance-item-subtitle{
+	font-size:1em;
 }
