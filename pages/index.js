@@ -61,6 +61,14 @@ export default function Home() {
 				<div class="service-item-img">img</div>
 				<div class="service-item-text">証券サービス</div>
 			</div>
+			<div class="service-item">
+				<div class="service-item-img">img</div>
+				<div class="service-item-text">証券サービス</div>
+			</div>
+			<div class="service-item">
+				<div class="service-item-img">img</div>
+				<div class="service-item-text">証券サービス</div>
+			</div>
 		</div>
 	</section>
 	<section>
@@ -70,6 +78,22 @@ export default function Home() {
 				<div class="insurance-item-img">img</div>
 				<div class="insurance-item-text">
 					<div class="insurance-item-title">自動車・バイクの保険</div>
+					<div class="insurance-item-subtitle">自動車の保険自動車の保険自動車の保険自動車の保険
+					自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険</div>
+				</div>
+			</div>
+			<div class="insurance-item">
+				<div class="insurance-item-img">img</div>
+				<div class="insurance-item-text">
+					<div class="insurance-item-title">住まいの保険</div>
+					<div class="insurance-item-subtitle">自動車の保険自動車の保険自動車の保険自動車の保険
+					自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険</div>
+				</div>
+			</div>
+			<div class="insurance-item">
+				<div class="insurance-item-img">img</div>
+				<div class="insurance-item-text">
+					<div class="insurance-item-title">旅行の保険</div>
 					<div class="insurance-item-subtitle">自動車の保険自動車の保険自動車の保険自動車の保険
 					自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険</div>
 				</div>
