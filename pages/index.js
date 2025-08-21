@@ -14,7 +14,7 @@ export default function Home() {
         <title>ホーム - こんにちは。</title>
         <meta name="description" content="Auth0認証を使ったNext.jsアプリ" />
     <meta name="robots" content="noindex , nofollow" />
-	  <link href="style.css" rel="stylesheet">
+	  <link href="style.css" rel="stylesheet"></Link>
       </Head>
       {!user ? (
         <>
