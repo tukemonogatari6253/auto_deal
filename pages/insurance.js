@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 
-export default function Home() {
+export default function Home(agent) {
   const { user, error, isLoading } = useUser();
 
   if (isLoading) return <div>Loading...</div>;
