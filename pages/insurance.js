@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 
-export default function Home(agent) {
+export default function Home({agent}) {
   const { user, error, isLoading } = useUser();
 
   if (isLoading) return <div>Loading...</div>;
@@ -51,7 +51,15 @@ export default function Home(agent) {
 	</header>
 	<main>
 	<section>
-			
+		   <div>
+      <ul>
+        {agent.map((agent) => (
+          <li key={agent.id}>
+            <p>{agent.title}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
 		<h3>自動車の保険商品</h3>
 		<div class="product">
 			<div class="product-item">
@@ -135,12 +143,6 @@ export default function Home(agent) {
 
   );
 }
-client
-      .get({
-        endpoint: 'agent',
-        contentId: 'mamdirr1hcf',
-      })
-      .then((res) => console.log(res));
 export const getServerSideProps = async () => {
 	  const data = await client.get({ endpoint: "agent" });
 
