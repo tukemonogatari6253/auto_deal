@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 
-export default function Home() {
+export default function Home(blog) {
   const { user, error, isLoading } = useUser();
 
   if (isLoading) return <div>Loading...</div>;
@@ -49,6 +49,16 @@ export default function Home() {
 	</header>
 	<main>
 	<section>
+	<div>
+      <ul>
+        {blog.map((blog) => (
+          <li key={blog.id}>
+            <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+			
 		<h3>自動車の保険商品</h3>
 		<div class="product">
 			<div class="product-item">
@@ -134,5 +144,6 @@ export default function Home() {
 }
 
 export const getServerSideProps = async () => {
-  return { props: {} };
+  const data = await client.get({ endpoint: "blog" });
+  return { props: {blog: data.contents,} };
 };
