@@ -1,5 +1,5 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
-import { client } from "../lib/microcms";
+import { client } from "../lib/client";
 
 import Link from 'next/link';
 import Head from 'next/head';
