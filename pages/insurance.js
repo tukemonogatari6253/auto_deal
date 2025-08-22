@@ -55,11 +55,12 @@ export default function Home(agent) {
 		<h3>自動車の保険商品</h3>
 	<div>
       <ul>
-        {agent.map((agent) => (
-          <li key={agent.id}>
-            <p>{agent.title}</p>
-          </li>
-        ))}
+        {client
+      .get({
+        endpoint: 'agent',
+        contentId: 'mamdirr1hcf',
+      })
+      .then((res) => console.log(res));}
       </ul>
     </div>
 		<div class="product">
