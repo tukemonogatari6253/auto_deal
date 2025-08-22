@@ -53,6 +53,15 @@ export default function Home() {
 	<section>
 			
 		<h3>自動車の保険商品</h3>
+	<div>
+      <ul>
+        {blog.map((agent) => (
+          <li key={agent.id}>
+            <p>{agent.title}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
 		<div class="product">
 			<div class="product-item">
 				<div class="product-item-img">img</div>
