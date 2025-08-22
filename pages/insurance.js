@@ -53,16 +53,6 @@ export default function Home(agent) {
 	<section>
 			
 		<h3>自動車の保険商品</h3>
-	<div>
-      <ul>
-        {client
-      .get({
-        endpoint: 'agent',
-        contentId: 'mamdirr1hcf',
-      })
-      .then((res) => console.log(res));}
-      </ul>
-    </div>
 		<div class="product">
 			<div class="product-item">
 				<div class="product-item-img">img</div>
@@ -145,7 +135,12 @@ export default function Home(agent) {
 
   );
 }
-
+client
+      .get({
+        endpoint: 'agent',
+        contentId: 'mamdirr1hcf',
+      })
+      .then((res) => console.log(res));
 export const getServerSideProps = async () => {
 	  const data = await client.get({ endpoint: "agent" });
 
