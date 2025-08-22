@@ -55,7 +55,7 @@ export default function Home() {
 		<h3>自動車の保険商品</h3>
 	<div>
       <ul>
-        {blog.map((agent) => (
+        {agent.map((agent) => (
           <li key={agent.id}>
             <p>{agent.title}</p>
           </li>
