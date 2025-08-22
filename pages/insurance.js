@@ -137,5 +137,7 @@ export default function Home() {
 }
 
 export const getServerSideProps = async () => {
+	  const data = await client.get({ endpoint: "agent" });
+
   return { props: {} };
 };
