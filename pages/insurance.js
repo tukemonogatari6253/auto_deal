@@ -105,7 +105,7 @@ export default function Home({agent}) {
 		<div class="agent">
 			<div class="agent-item">
 				<div class="agent-item-img">img</div>
-		{agent[0].map((agent) => (
+		{agent.map((agent) => (
 				<div class="agent-item-text" key={agent.id}>
 					<div>{agent.title}</div>
 					<div>{agent.erea}</div>
