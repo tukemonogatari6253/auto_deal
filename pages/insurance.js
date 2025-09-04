@@ -110,7 +110,7 @@ const css_bg={
 			{agent.map((agent) => (
 				
 			<div class="agent-item">
-				<div class="agent-item-img" style={{background:)}}><img src={css_bg} /></div>
+				<div class="agent-item-img"><img src={css_bg} /></div>
 				<div class="agent-item-text" key={agent.id}>
 					<div>{agent.title}</div>
 					<div>{agent.erea}</div>
