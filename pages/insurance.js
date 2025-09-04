@@ -105,10 +105,10 @@ export default function Home({agent}) {
 		<div class="agent">
 			<div class="agent-item">
 				<div class="agent-item-img">img</div>
-		{agent.map((agent) => (
+		{agent.map((agent[1]) => (
 				<div class="agent-item-text" key={agent.id}>
-					<div>{agent.title[1]}</div>
-					<div>{agent.erea[1]}</div>
+					<div>{agent.title}</div>
+					<div>{agent.erea}</div>
 					<div class="agent-item-review">
 						<div>星</div>
 						<div>人数</div>
