@@ -99,7 +99,7 @@ section .insurance .insurance-item{
 section .insurance .insurance-item .insurance-item-img{
 	width:30%;
 }
-section .insurance .insurance-item .insurance-item-img{
+section .insurance .insurance-item .insurance-item-img img{
 	width: 100%;
     border-radius: 50px;
     overflow: hidden;
