@@ -106,7 +106,7 @@ export default function Home({agent}) {
 
 			{agent.map((agent) => (
 			<div class="agent-item">
-				<div class="agent-item-img"　style={url(agent.icon)}><img src={css_bg} /></div>
+				<div class="agent-item-img"　style={url(agent.icon.url)}><img src={css_bg} /></div>
 				<div class="agent-item-text" key={agent.id}>
 					<div>{agent.title}</div>
 					<div>{agent.erea}</div>
