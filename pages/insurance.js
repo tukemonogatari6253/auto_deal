@@ -108,7 +108,7 @@ export default function Home({agent}) {
 		{agent.map((agent) => (
 				<div class="agent-item-text" key={agent.id}>
 					<div>{agent.title}</div>
-					<div>{agent.body}</div>
+					<div>{agent.erea}</div>
 					<div class="agent-item-review">
 						<div>星</div>
 						<div>人数</div>
