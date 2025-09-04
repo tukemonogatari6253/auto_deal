@@ -103,9 +103,9 @@ export default function Home({agent}) {
 	<section>
 		<h3>おすすめのエージェント</h3>
 		<div class="agent">
+			{agent.map((agent) => (
 			<div class="agent-item">
 				<div class="agent-item-img">img</div>
-		{agent.map((agent) => (
 				<div class="agent-item-text" key={agent.id}>
 					<div>{agent.title}</div>
 					<div>{agent.erea}</div>
@@ -114,8 +114,8 @@ export default function Home({agent}) {
 						<div>人数</div>
 					</div>
 				</div>
-			        ))}
 			</div>
+				))}
 			<div class="agent-item">
 				<div class="agent-item-img">img</div>
 				<div class="agent-item-text">
