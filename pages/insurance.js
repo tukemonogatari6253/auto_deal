@@ -7,7 +7,11 @@ import Head from 'next/head';
 
 export default function Home({agent}) {
   const { user, error, isLoading } = useUser();
-
+const css_bg={
+    "background":`url(${agent.id}) 0 0 no-repeat`,
+    "backgroundSize":"contain",
+    "height":"10vw"
+  }
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
 
@@ -106,7 +110,7 @@ export default function Home({agent}) {
 			{agent.map((agent) => (
 				
 			<div class="agent-item">
-				<div class="agent-item-img"><img src={css_bg} /></div>
+				<div class="agent-item-img"　style={{background:`url(${css_bg}) 0 0 no-repeat`}}><img src={css_bg} /></div>
 				<div class="agent-item-text" key={agent.id}>
 					<div>{agent.title}</div>
 					<div>{agent.erea}</div>
@@ -148,10 +152,6 @@ export default function Home({agent}) {
 }
 export const getServerSideProps = async () => {
 	  const data = await client.get({ endpoint: "agent" });
-const css_bg={
-    "background":`url(${agent.id}) 0 0 no-repeat`,
-    "backgroundSize":"contain",
-    "height":"10vw"
-  }
+
   return { props: {agent: data.contents,} };
 };
