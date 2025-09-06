@@ -64,6 +64,7 @@ export default function Home({agent,insurance}) {
 		<div class="product">
 			{insurance.map((insurance) => (
 			<div class="product-item">
+				<Link href={`/insurance/${insurance.id}`}>
 				<div class="product-item-img"><img src={insurance.icon.url} /></div>
 				<div class="product-item-text" key={insurance.id}>
 					<div>{insurance.title}</div>
@@ -73,6 +74,7 @@ export default function Home({agent,insurance}) {
 						<div>人数</div>
 					</div>
 				</div>
+		  </Link>
 			</div>
 				))}
 			<div class="product-item">
