@@ -186,3 +186,14 @@ section .product .product-item .product-item-review{
 	gap:10px;
 	
 }
+#contet-wrap{
+	display:flex;
+}
+
+#contet-main{
+	width:70%
+}
+
+#contet-side{
+	width:30%
+}
