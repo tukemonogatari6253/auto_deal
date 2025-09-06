@@ -80,15 +80,6 @@ export default function insuranceId({ insurance }){
 
 	</main>
     </div>
-        <div>
-      <h1>{insurance.title}</h1>
-      <p>{insurance.publishedAt}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${insurance.text}`,
-        }}
-      />
-    </div>
   );
 }
 
