@@ -63,6 +63,11 @@ export default function insuranceId({ insurance }){
 			<h3>{insurance.title}</h3>
 			<div class="detail-img"><img src={insurance.icon.url} /></div>
 			<div class="detail-text">
+				<div
+        			dangerouslySetInnerHTML={{
+       			   __html: `${insurance.text}`,
+        		}}
+      			/>
 			</div>
 		</div>
 	</section>
