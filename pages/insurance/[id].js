@@ -48,7 +48,7 @@ export default function insuranceId({ insurance }){
 		</div>
 		
 	</header>
-	<main>
+	<main id="contet-main">
 	<section>
 		   <div>
       <ul>
@@ -62,11 +62,6 @@ export default function insuranceId({ insurance }){
 			<h3>{insurance.title}</h3>
 			<div class="detail-img"><img src={insurance.icon.url} /></div>
 			<div class="detail-text">
-				<div
-					dangerouslySetInnerHTML={{
-          			__html: `${insurance.text}`,
-        			}}
-      			/>
 			</div>
 		</div>
 	</section>
@@ -90,6 +85,8 @@ export default function insuranceId({ insurance }){
 		</div>
 	</section>
 	</main>
+	<div id="contet-side">
+	</div>
     </div>
   );
 }
