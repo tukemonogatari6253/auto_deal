@@ -52,17 +52,14 @@ export default function insuranceId({ insurance }){
 	<section>
 		   <div>
       <ul>
-        {insurance.map((insurance) => (
           <li key={insurance.id}>
           <p>{insurance.publishedAt}</p>
             <p>{insurance.title}</p>
           </li>
-        ))}
       </ul>
     </div>
 		<h3>自動車の保険商品</h3>
 		<div class="product">
-			{insurance.map((insurance) => (
 			<div class="product-item">
 				<div class="product-item-img"><img src={insurance.icon.url} /></div>
 				<div class="product-item-text" key={insurance.id}>
@@ -74,7 +71,6 @@ export default function insuranceId({ insurance }){
 					</div>
 				</div>
 			</div>
-				))}
 		</div>
 	</section>
 
