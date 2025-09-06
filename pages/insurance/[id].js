@@ -82,7 +82,6 @@ export default function insuranceId({ insurance }){
 		<div class="faq">
 			<h3>よくある質問</h3>
 			<p>いただいた質問に保険会社が直接答えます。</p>
-			<div>{insurance.faq}</div>
 		</div>
 	</section>
 	</main>
