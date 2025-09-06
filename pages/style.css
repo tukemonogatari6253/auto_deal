@@ -166,6 +166,17 @@ section .product .product-item{
 } 
 section .product .product-item .product-item-img{
 	width:30%;
+		aspect-ratio: 1;
+    height: fit-content;
+    overflow: hidden;
+    display: block;
+    border-radius: 50px;
+    overflow: hidden;
+    display: block;
+    background: #f2f2f2;
+}
+section .product .product-item .product-item-img img{
+	width:100%;
 }
 section .product .product-item .product-item-text{
 	width:60%;
