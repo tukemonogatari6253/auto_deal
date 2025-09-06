@@ -58,22 +58,33 @@ export default function insuranceId({ insurance }){
           </li>
       </ul>
     </div>
-		<h3>自動車の保険商品</h3>
-		<div class="product">
-			<div class="product-item">
-				<div class="product-item-img"><img src={insurance.icon.url} /></div>
-				<div class="product-item-text" key={insurance.id}>
-					<div>{insurance.title}</div>
-					<div>{insurance.description}</div>
-					<div class="product-item-review">
-						<div>星</div>
-						<div>人数</div>
-					</div>
-				</div>
+		<div class="detail" key={insurance.id}>
+			<h3>{insurance.title}</h3>
+			<div class="detail-img"><img src={insurance.icon.url} /></div>
+			<div class="detail-text">
+				<div>{insurance.text}</div>
 			</div>
 		</div>
 	</section>
-
+	<section>
+		<div class="campaign">
+			<h3>キャンペーン</h3>
+			<div>{insurance.campaign}</div>
+		</div>
+	</section>
+	<section>
+		<div class="range">
+			<h3>保険範囲</h3>
+			<div>{insurance.range}</div>
+		</div>
+	</section>
+	<section>
+		<div class="faq">
+			<h3>よくある質問</h3>
+			<p>いただいた質問に保険会社が直接答えます。</p>
+			<div>{insurance.range}</div>
+		</div>
+	</section>
 	</main>
     </div>
   );
