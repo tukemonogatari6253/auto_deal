@@ -194,6 +194,7 @@ section .detail,section .campaign,section .review,section .range{
 	padding:1em;
 	background: #FFF;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+	margin: 1em 0;
 }
 
 #contet-wrap{
