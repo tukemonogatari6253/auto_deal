@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 
-export default function Home({agent}) {
+export default function Home({agent,insurance}) {
   const { user, error, isLoading } = useUser();
 
   if (isLoading) return <div>Loading...</div>;
@@ -62,18 +62,19 @@ export default function Home({agent}) {
     </div>
 		<h3>自動車の保険商品</h3>
 		<div class="product">
+			{insurance.map((insurance) => (
 			<div class="product-item">
-				<div class="product-item-img">img</div>
-				<div class="product-item-text">
-					<div>保険商品</div>
-					<div>自動車の保険自動車の保険自動車の保険自動車の保険
-自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険自動車の保険</div>
+				<div class="product-item-img">{insurance.icon.url}</div>
+				<div class="product-item-text" key={agent.id}>
+					<div>{insurance.title}</div>
+					<div>{insurance.description}</div>
 					<div class="product-item-review">
 						<div>星</div>
 						<div>人数</div>
 					</div>
 				</div>
 			</div>
+				))}
 			<div class="product-item">
 				<div class="product-item-img">img</div>
 				<div class="product-item-text">
@@ -147,7 +148,7 @@ export default function Home({agent}) {
   );
 }
 export const getServerSideProps = async () => {
-	  const data = await client.get({ endpoint: "agent" });
+	  const data = await client.get({ endpoint: "agent","insurance" });
 
-  return { props: {agent: data.contents,} };
+  return { props: {agent: data.contents,insurance: data.contents,} };
 };
