@@ -3,11 +3,11 @@ import { client } from "../../lib/client";
 export default function insuranceId({ insurance }){
   return(
         <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
+      <h1>{insurance.title}</h1>
+      <p>{insurance.publishedAt}</p>
       <div
         dangerouslySetInnerHTML={{
-          __html: `${blog.body}`,
+          __html: `${insurance.text}`,
         }}
       />
     </main>
