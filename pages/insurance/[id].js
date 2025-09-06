@@ -48,6 +48,7 @@ export default function insuranceId({ insurance }){
 		</div>
 		
 	</header>
+	<div id="contet-wrap">
 	<main id="contet-main">
 	<section>
 		   <div>
@@ -86,6 +87,7 @@ export default function insuranceId({ insurance }){
 	</section>
 	</main>
 	<div id="contet-side">
+	</div>
 	</div>
     </div>
   );
