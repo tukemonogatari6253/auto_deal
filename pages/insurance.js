@@ -64,8 +64,8 @@ export default function Home({agent,insurance}) {
 		<div class="product">
 			{insurance.map((insurance) => (
 			<div class="product-item">
-				<div class="product-item-img">{insurance.icon.url}</div>
-				<div class="product-item-text" key={agent.id}>
+				<div class="product-item-img"><img src={insurance.icon.url} /></div>
+				<div class="product-item-text" key={insurance.id}>
 					<div>{insurance.title}</div>
 					<div>{insurance.description}</div>
 					<div class="product-item-review">
@@ -149,6 +149,7 @@ export default function Home({agent,insurance}) {
 }
 export const getServerSideProps = async () => {
 	  const data = await client.get({ endpoint: "agent"});
+	const data2 = await client.get({ endpoint: "insurance"});
 
-  return { props: {agent: data.contents,insurance: data.contents,} };
+  return { props: {agent: data.contents,insurance: data2.contents,} };
 };
