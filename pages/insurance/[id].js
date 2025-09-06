@@ -16,16 +16,16 @@ export default function insuranceId({ insurance }){
 
 export const getStaticPaths = async () => {
   const data = await client.get({endpoint:"insurance"});
-  const paths = data.contents.map((content) => '/insurance/${content.id}');
-  return { paths , fallnack: false };
+  const paths = data.contents.map((content) => `/insurance/${content.id}`);
+  return { paths , fallback: false };
 };
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "insurance", contentId:id});
   
-  retuen {
+  return {
     props: {
       insurance:data,
-  },
+  };
 };
