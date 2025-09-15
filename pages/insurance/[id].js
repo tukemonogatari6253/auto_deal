@@ -16,7 +16,7 @@ export default function insuranceId({ insurance }){
 
   useEffect(() => {
     const loadReviews = async () => {
-      const res = await fetch('/api/get-reviews');
+      const res = await fetch('/api/get-reviews?insuranceId=${insurance.id}');
       const data = await res.json();
       setReviews(data);
     };
