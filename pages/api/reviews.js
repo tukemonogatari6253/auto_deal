@@ -3,7 +3,7 @@ import { getSession } from '@auth0/nextjs-auth0';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { content } = req.body;
+    const { content, insuranceId } = req.body;
     const session = await getSession(req, res);
     if (!session || !session.user) return res.status(401).end();
 
@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
     const { error } = await supabase
       .from('reviews')
-      .insert([{ content, user_id: sub, user_name: name }]);
+      .insert([{ content, user_id: sub, user_name: name, product_id: insuranceId, }]);
 
     if (error) return res.status(500).json({ error: error.message });
 
