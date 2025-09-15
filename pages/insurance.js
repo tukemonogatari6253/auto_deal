@@ -1,6 +1,6 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { client } from "../lib/client";
-
+import Header from '../components/Header';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -34,6 +34,7 @@ export default function Home({agent,insurance}) {
           <Link href="/reviews">口コミページへ</Link>
         </>
       )}
+	<Header />
 			 	   <header>
 		<div class="rogo">ロゴmann</div>
 		<div class="header-contents">
