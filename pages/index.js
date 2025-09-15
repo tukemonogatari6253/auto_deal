@@ -1,3 +1,4 @@
+export default function Home() {
 import Link from 'next/link';
 import Head from 'next/head';
 
