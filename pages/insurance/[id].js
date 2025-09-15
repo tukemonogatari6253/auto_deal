@@ -21,7 +21,7 @@ export default function insuranceId({ insurance }){
       setReviews(data);
     };
     loadReviews();
-  }, []);
+  }, [insurance.id]);
 
   const handleSubmit = async () => {
     await fetch('/api/reviews', {
