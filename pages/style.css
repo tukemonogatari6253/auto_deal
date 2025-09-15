@@ -196,7 +196,22 @@ section .detail,section .campaign,section .review,section .range{
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 	margin: 1em 0;
 }
-
+section .faq{
+    padding: 0.4em;
+}
+section .faq .faq-head{
+    padding: 1em;
+}
+section .faq .faq-item{
+	border-bottom: solid #aaa 1px;
+    padding: 1em;
+}
+section .faq .faq-item:first-child{
+	border-top: solid #aaa 1px;
+}
+section .faq .faq-more{
+    padding: 1em;
+}
 #contet-wrap{
 	display:flex;
 }
