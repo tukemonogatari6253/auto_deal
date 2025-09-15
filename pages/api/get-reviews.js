@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
     // insuranceId が指定されていたら絞り込み
   if (insuranceId) {
-    query = query.eq('insurance_id', insuranceId);
+    query = query.eq('product_id', insuranceId);
   }
 
   const { data, error } = await query;
