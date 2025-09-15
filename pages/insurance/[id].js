@@ -4,12 +4,34 @@ import Header from '../../components/Header';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import { useState, useEffect } from 'react';
+
 export default function insuranceId({ insurance }){
   const { user, error, isLoading } = useUser();
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
-  
+    const [content, setContent] = useState('');
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    const loadReviews = async () => {
+      const res = await fetch('/api/get-reviews');
+      const data = await res.json();
+      setReviews(data);
+    };
+    loadReviews();
+  }, []);
+
+  const handleSubmit = async () => {
+    await fetch('/api/reviews', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content }),
+    });
+    setContent('');
+    location.reload(); // シンプルな再読み込み
+  };
   return(
     <div>
       <Head>
@@ -67,6 +89,29 @@ export default function insuranceId({ insurance }){
 		<div class="range">
 			<h3>保険範囲</h3>
 			<div>{insurance.range}</div>
+		</div>
+	</section>
+	<section>
+		<div class="review">
+			<div class="review-head">
+			<h3>最近の利用者のレビュー</h3>
+			</div>
+			<div class="review-items">
+		      <ul>
+		        {reviews.map((r) => (
+   			    <li key={r.id}>
+	        	    <strong>{r.user_name}</strong>: {r.content}
+  		        </li>
+       			 ))}
+      		</ul>
+			{user && (
+        	<>
+          	<textarea value={content} onChange={(e) => setContent(e.target.value)} />
+       		<button onClick={handleSubmit}>投稿</button>
+      		</>
+    		)}
+			</div>
+			<div class="review-more"><div class="more-button">全ての口コミを表示</div></div>
 		</div>
 	</section>
 	<section>
