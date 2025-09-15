@@ -2,7 +2,7 @@ import Link from 'next/link';
 export default function Header(){
   return(
    <header>
-		<div class="rogo">ロゴmann</div>
+		<div class="rogo"><Link href="/">ロゴmann</Link></div>
 		<div class="header-contents">
 			<ul>
 				<li><Link href="/api/auth/login">サービスとは</Link></li>
