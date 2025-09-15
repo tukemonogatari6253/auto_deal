@@ -2,7 +2,7 @@ import { supabase } from '../../lib/supabaseClient';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).end();
- const { insuranceId } = req.query;
+ const { productId } = req.query;
   
   let query = supabase
     .from('reviews')
@@ -10,8 +10,8 @@ export default async function handler(req, res) {
     .order('created_at', { ascending: false });
 
     // insuranceId が指定されていたら絞り込み
-  if (insuranceId) {
-    query = query.eq('product_id', insuranceId);
+  if (productId) {
+    query = query.eq('product_id', productId);
   }
 
   const { data, error } = await query;
