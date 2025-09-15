@@ -1,32 +1,8 @@
-import { useUser } from '@auth0/nextjs-auth0/client';
-import { client } from "../lib/client";
-
 import Link from 'next/Link';
 
 export default function Header(){
-	  const { user, error, isLoading } = useUser();
-
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>{error.message}</div>;
-
   return(
-          {!user ? (
-        <>
-
-          <h1>こんにちは。autodealです。まずはログインしよう</h1>
-          <Link href="/api/auth/login">ログイン</Link>
-        </>
-      ) : (
-        <>
-          <h1>ログインできました。こんにちは, {user.name}</h1>
-          <Link href="/api/auth/logout">ログアウト</Link>
-          <br />
-          <Link href="/protected">会員ページにいく</Link>
-          <br />
-          <Link href="/reviews">口コミページへ</Link>
-        </>
-      )}
-			 	   <header>
+   <header>
 		<div class="rogo">ロゴmann</div>
 		<div class="header-contents">
 			<ul>
