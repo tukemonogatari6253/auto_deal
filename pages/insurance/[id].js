@@ -1,6 +1,6 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { client } from "../../lib/client";
-
+import Header from '../../components/Header';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -33,21 +33,7 @@ export default function insuranceId({ insurance }){
           <Link href="/reviews">口コミページへ</Link>
         </>
       )}
-			 	   <header>
-		<div class="rogo">ロゴmann</div>
-		<div class="header-contents">
-			<ul>
-				<li><Link href="/api/auth/login">サービスとは</Link></li>
-				<li><Link href="/api/auth/login">保険カテゴリ</Link></li>
-				<li><Link href="/api/auth/login">保険会社一覧</Link></li>
-			</ul>
-			<div class="login-menu">
-				<div class="register"><Link href="/api/auth/login">新規会員登録</Link></div>
-				<div class="login"><Link href="/api/auth/login">ログイン</Link></div>
-			</div>
-		</div>
-		
-	</header>
+	<Header />
 	<div id="contet-wrap">
 	<main id="contet-main">
 	<section>
