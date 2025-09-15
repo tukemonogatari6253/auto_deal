@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   
   let query = supabase
     .from('reviews')
-    .select('id, content, user_name, created_at')
+    .select('id, content, user_name, insurance_id, created_at')
     .order('created_at', { ascending: false });
 
     // insuranceId が指定されていたら絞り込み
