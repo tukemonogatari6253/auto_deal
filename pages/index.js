@@ -1,8 +1,13 @@
-
+import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../components/Header';
+
 export default function Home() {
+	  const { user, error, isLoading } = useUser();
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
   return (
     <div>
       <Head>
@@ -10,6 +15,22 @@ export default function Home() {
         <meta name="description" content="Auth0認証を使ったNext.jsアプリ" />
     <meta name="robots" content="noindex , nofollow" />
       </Head>
+      {!user ? (
+        <>
+
+          <h1>こんにちは。autodealです。まずはログインしよう</h1>
+          <Link href="/api/auth/login">ログイン</Link>
+        </>
+      ) : (
+        <>
+          <h1>ログインできました。こんにちは, {user.name}</h1>
+          <Link href="/api/auth/logout">ログアウト</Link>
+          <br />
+          <Link href="/protected">会員ページにいく</Link>
+          <br />
+          <Link href="/reviews">口コミページへ</Link>
+        </>
+      )}
 	<Header />
 	<main>
 	<section>
