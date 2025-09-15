@@ -211,7 +211,7 @@ section .faq .faq-items .faq-item{
 	border-bottom: solid #aaa 1px;
     padding: 1em;
 }
-section .faq .faq-items:first-child{
+section .faq .faq-items div:first-child{
 	border-top: solid #aaa 1px;
 }
 section .faq .faq-more{
