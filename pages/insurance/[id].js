@@ -89,12 +89,14 @@ export default function insuranceId({ insurance }){
 			<h3>よくある質問</h3>
 			<p>いただいた質問に保険会社の担当スタッフが直接答えます。</p>
 			</div>
+			<div class="faq-items">
 			{insurance.faq.map((faq,id) => (
 				<div key={id} class="faq-item">
 				<div>{faq.question}</div>
 				<div>{faq.answer}</div>
 				</div>
 			))}
+			</div>
 			<div class="faq-more"><div class="more-button">その他のよくある質問を見る</div></div>
 		</div>
 	</section>
