@@ -29,7 +29,7 @@ export default function insuranceId({ insurance }){
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
 		  content,
-		  insuranceId: insurance.id
+		  productId: insurance.id
 	  }),
     });
     setContent('');
