@@ -27,7 +27,10 @@ export default function insuranceId({ insurance }){
     await fetch('/api/reviews', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content }),
+      body: JSON.stringify({
+		  content,
+		  insuranceId: insurance.id
+	  }),
     });
     setContent('');
     location.reload(); // シンプルな再読み込み
