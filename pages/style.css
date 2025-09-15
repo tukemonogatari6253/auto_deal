@@ -197,20 +197,33 @@ section .detail,section .campaign,section .review,section .range{
 	margin: 1em 0;
 }
 section .faq{
-    padding: 0.4em;
+	background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    margin: 1em 0;
 }
 section .faq .faq-head{
     padding: 1em;
 }
-section .faq .faq-item{
+section .faq .faq-items{
+	padding: 0.4em;
+}
+section .faq .faq-items .faq-item{
 	border-bottom: solid #aaa 1px;
     padding: 1em;
 }
-section .faq .faq-item:first-child{
+section .faq .faq-items .faq-item :first-child{
 	border-top: solid #aaa 1px;
 }
 section .faq .faq-more{
-    padding: 1em;
+    padding: 2em 0;
+}
+section .more-button{
+    border: solid #333 1px;
+    display: block;
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 0.4em;
+    margin: 0 auto;
 }
 #contet-wrap{
 	display:flex;
