@@ -103,7 +103,10 @@ export default function insuranceId({ insurance }){
 		      <ul>
 		        {reviews.map((r) => (
    			    <li key={r.id}>
-	        	    <strong>{r.user_name}</strong>: {r.content}
+	        	    <div class="detail-img"><img src={insurance.icon.url} /></div>
+					<div class="detail-text">
+							 <strong>{r.user_name}</strong>{r.created_at}<br>{r.content}
+					</div>
   		        </li>
        			 ))}
       		</ul>
