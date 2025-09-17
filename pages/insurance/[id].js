@@ -6,7 +6,8 @@ import Head from 'next/head';
 
 import { useState, useEffect } from 'react';
 
-console.log(reformatCommon("YYYY/MM/DD HH:mm")(new Date()));
+// 正しい呼び出し例
+console.log(formatCommon("YYYY/MM/DD HH:mm")(new Date()));
 
 export default function insuranceId({ insurance }){
   const { user, error, isLoading } = useUser();
