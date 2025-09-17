@@ -190,6 +190,33 @@ section .product .product-item .product-item-review{
 	gap:10px;
 	
 }
+section .review .review-item {
+    width: 25%;
+    display: flex;
+    gap: 10px;
+    padding: 1em;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15)
+}
+
+section .review .review-item .review-item-img {
+    width: 30%;
+    aspect-ratio: 1;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 50px;
+    overflow: hidden;
+    display: block;
+    background: #f2f2f2
+}
+
+section .review .review-item .review-item-img img {
+    width: 100%
+}
+
+section .review .review-item .review-item-text {
+    width: 60%
+}
 section .detail,section .campaign,section .review,section .range{
 	padding:1em;
 	background: #FFF;
