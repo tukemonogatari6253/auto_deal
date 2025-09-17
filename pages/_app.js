@@ -4,19 +4,20 @@ import './style.css';
 import dayjs from 'dayjs';
 import timezone from "dayjs/plugin/timezone";
 import utc from "dayjs/plugin/utc";
+import 'dayjs/locale/ja';
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
+dayjs.locale('ja');
 
 export const formatCommon =
-  (format: string) =>
-  (date: string | Date | number): string => {
-    return dayjs.utc(date).tz("Asia/Tokyo").format(format) as string;
+  (format) =>
+  (date) => {
+    return dayjs.utc(date).tz("Asia/Tokyo").format(format);
   };
 
-
-dayjs.locale(ja);
-console.log(formatCommon(new Date));
+// 正しい呼び出し例
+console.log(formatCommon("YYYY/MM/DD HH:mm")(new Date()));
 
 export default function App({ Component, pageProps }) {
   return (
