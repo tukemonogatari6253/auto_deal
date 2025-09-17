@@ -192,6 +192,10 @@ section .product .product-item .product-item-review{
 }
 section .review .review-item {
     padding: 1em;
+	border-bottom: 1px solid #aaa;
+}
+section .review .review-item:first-child {
+    border-top: 1px solid #aaa;
 }
 section .review .review-item-flex{
     display: flex;
