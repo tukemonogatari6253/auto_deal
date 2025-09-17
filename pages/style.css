@@ -199,7 +199,7 @@ section .review .review-item {
 }
 
 section .review .review-item .review-item-img {
-    width: 30%;
+    width: 4em;
     aspect-ratio: 1;
     height: -moz-fit-content;
     height: fit-content;
