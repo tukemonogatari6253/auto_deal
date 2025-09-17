@@ -5,6 +5,7 @@ import dayjs from 'dayjs';
 import ja from 'dayjs/locale/ja';
 
 dayjs.locale(ja);
+console.log(dayjs());
 
 export default function App({ Component, pageProps }) {
   return (
