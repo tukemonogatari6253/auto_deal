@@ -6,6 +6,22 @@ import Head from 'next/head';
 
 import { useState, useEffect } from 'react';
 
+import dayjs from 'dayjs';
+import timezone from "dayjs/plugin/timezone";
+import utc from "dayjs/plugin/utc";
+import 'dayjs/locale/ja';
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
+dayjs.locale('ja');
+
+export const formatCommon =
+  (format) =>
+  (date) => {
+    return dayjs.utc(date).tz("Asia/Tokyo").format(format);
+  };
+
+
 // 正しい呼び出し例
 console.log(formatCommon("YYYY/MM/DD HH:mm")(new Date()));
 
