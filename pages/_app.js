@@ -16,8 +16,7 @@ export const formatCommon =
     return dayjs.utc(date).tz("Asia/Tokyo").format(format);
   };
 
-// 正しい呼び出し例
-console.log(formatCommon("YYYY/MM/DD HH:mm")(new Date()));
+
 
 export default function App({ Component, pageProps }) {
   return (
