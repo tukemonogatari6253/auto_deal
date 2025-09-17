@@ -120,10 +120,13 @@ export default function insuranceId({ insurance }){
 			</div>
 			<div class="review-items">
 		        {reviews.map((r) => (
-   			    <div key={r.id} class="review-item">
-	        	    <div class="review-item-img"><img src={insurance.icon.url} /></div>
-					<div class="review-item-text">
-							 <strong>{r.user_name}　{formatCommon("YYYY年MM月DD日")(r.created_at)}</strong><br />{r.content}
+   			    <div key={r.id}>
+					<div class="review-item">
+	        	    	<div class="review-item-img"><img src={insurance.icon.url} /></div>
+						<div class="review-item-text">
+							 <strong>{r.user_name}　{formatCommon("YYYY年MM月DD日")(r.created_at)}</strong>
+						</div>
+					{r.content}
 					</div>
   		        </div>
        			 ))}
