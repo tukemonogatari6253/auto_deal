@@ -122,9 +122,9 @@ export default function insuranceId({ insurance }){
 		      <ul>
 		        {reviews.map((r) => (
    			    <li key={r.id}>
-	        	    <div class="detail-img"><img src={insurance.icon.url} /></div>
-					<div class="detail-text">
-							 <strong>{r.user_name}　{formatCommon("YYYY年MM月DD")(r.created_at)}</strong><br />{r.content}
+	        	    <div class="review-img"><img src={insurance.icon.url} /></div>
+					<div class="review-text">
+							 <strong>{r.user_name}　{formatCommon("YYYY年MM月DD日")(r.created_at)}</strong><br />{r.content}
 					</div>
   		        </li>
        			 ))}
