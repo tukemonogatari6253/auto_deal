@@ -119,16 +119,14 @@ export default function insuranceId({ insurance }){
 			<h3>最近の利用者のレビュー</h3>
 			</div>
 			<div class="review-items">
-		      <ul>
 		        {reviews.map((r) => (
-   			    <li key={r.id}>
+   			    <div key={r.id} class="review-item">
 	        	    <div class="review-img"><img src={insurance.icon.url} /></div>
 					<div class="review-text">
 							 <strong>{r.user_name}　{formatCommon("YYYY年MM月DD日")(r.created_at)}</strong><br />{r.content}
 					</div>
-  		        </li>
+  		        </div>
        			 ))}
-      		</ul>
 			{user && (
         	<>
           	<textarea value={content} onChange={(e) => setContent(e.target.value)} />
