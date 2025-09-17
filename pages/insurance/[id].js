@@ -124,7 +124,7 @@ export default function insuranceId({ insurance }){
    			    <li key={r.id}>
 	        	    <div class="detail-img"><img src={insurance.icon.url} /></div>
 					<div class="detail-text">
-							 <strong>{r.user_name}</strong>{formatCommon("YYYY/MM/DD HH:mm")(r.created_at)}<br />{r.content}
+							 <strong>{r.user_name}　{formatCommon("YYYY年MM月DD")(r.created_at)}</strong><br />{r.content}
 					</div>
   		        </li>
        			 ))}
