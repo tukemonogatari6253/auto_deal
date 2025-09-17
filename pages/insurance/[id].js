@@ -6,6 +6,8 @@ import Head from 'next/head';
 
 import { useState, useEffect } from 'react';
 
+console.log(dayjs(new Date()).format(););
+
 export default function insuranceId({ insurance }){
   const { user, error, isLoading } = useUser();
 
@@ -105,7 +107,7 @@ export default function insuranceId({ insurance }){
    			    <li key={r.id}>
 	        	    <div class="detail-img"><img src={insurance.icon.url} /></div>
 					<div class="detail-text">
-							 <strong>{r.user_name}</strong>{r.created_at} {dayjs(new Date()).format()}<br />{r.content}
+							 <strong>{r.user_name}</strong>{r.created_at}<br />{r.content}
 					</div>
   		        </li>
        			 ))}
