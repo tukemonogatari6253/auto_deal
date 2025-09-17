@@ -6,8 +6,6 @@ import Head from 'next/head';
 
 import { useState, useEffect } from 'react';
 
-console.log(dayjs());
-
 export default function insuranceId({ insurance }){
   const { user, error, isLoading } = useUser();
 
